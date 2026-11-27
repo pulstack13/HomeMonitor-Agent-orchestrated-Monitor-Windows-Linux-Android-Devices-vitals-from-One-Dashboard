@@ -1,0 +1,19 @@
+{
+  "name": "HomeMonitor Lite",
+  "short_name": "HM Lite",
+  "description": "Minimal local HomeMonitor view",
+  "start_url": "/lite",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/static/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
