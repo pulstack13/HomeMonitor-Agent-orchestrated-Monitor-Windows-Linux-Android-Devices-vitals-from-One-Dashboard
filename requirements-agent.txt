@@ -1,0 +1,6 @@
+# Required by the desktop agent (Windows and Linux).
+psutil>=5.9
+
+# Optional extras, install manually when you want them:
+#   nvidia-ml-py>=12.0   NVIDIA GPU utilisation, VRAM and temperature
+#   WMI>=1.5             Windows CPU temperature (with LibreHardwareMonitor or ACPI zones)

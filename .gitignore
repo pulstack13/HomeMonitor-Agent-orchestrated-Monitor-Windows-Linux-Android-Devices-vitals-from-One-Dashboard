@@ -1,0 +1,64 @@
+# Runtime data and credentials
+data/
+data-demo/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.log
+logs/
+agent.json
+android_agent.json
+pairing_code.txt
+config.json
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+android-lite/keystore.password
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Packaging and build output
+build/
+dist/
+wheels/
+*.egg-info/
+*.apk
+*.aab
+*.idsig
+*.zip
+*.tar.gz
+*.tar
+*.tgz
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local overrides
+*.local
+*.private
