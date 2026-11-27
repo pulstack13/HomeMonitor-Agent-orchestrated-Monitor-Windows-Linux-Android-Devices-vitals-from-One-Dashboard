@@ -1,0 +1,31 @@
+[Unit]
+Description=HomeMonitor device agent
+Documentation=https://github.com/OWNER/REPOSITORY
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=homemonitor-agent
+Group=homemonitor-agent
+WorkingDirectory=/opt/homemonitor-agent
+Environment=PYTHONUNBUFFERED=1
+Environment=HOMEMONITOR_CONFIG=/var/lib/homemonitor-agent/agent.json
+ExecStart=/opt/homemonitor-agent/.venv/bin/python -m agent
+Restart=always
+RestartSec=10
+StateDirectory=homemonitor-agent
+StateDirectoryMode=0750
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+# The agent is outbound-only; it never accepts inbound connections.
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target
