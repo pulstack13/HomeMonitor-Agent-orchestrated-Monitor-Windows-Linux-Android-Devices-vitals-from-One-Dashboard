@@ -18,7 +18,7 @@ dependency-light. Please keep changes focused, testable and safe for a trusted h
 Requirements: Python 3.10+ and `psutil` for the desktop agent.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/HomeMonitor.git
+git clone https://github.com/pulstack13/HomeMonitor-Agent-orchestrated-Monitor-Windows-Linux-Android-Devices-vitals-from-One-Dashboard.git
 cd HomeMonitor
 python -m venv .venv
 # Windows: .venv\Scripts\python -m pip install -r requirements-dev.txt

@@ -1,6 +1,6 @@
 [Unit]
 Description=HomeMonitor central server and dashboard
-Documentation=https://github.com/OWNER/REPOSITORY
+Documentation=https://github.com/pulstack13/HomeMonitor-Agent-orchestrated-Monitor-Windows-Linux-Android-Devices-vitals-from-One-Dashboard
 After=network-online.target
 Wants=network-online.target
 

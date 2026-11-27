@@ -65,4 +65,4 @@ versioning for the public release.
 - No built-in TLS, public-internet exposure, multi-user roles, router integration or
   remote device control.
 
-[1.0.0]: https://github.com/YOUR-USERNAME/HomeMonitor/releases/tag/v1.0.0
+[1.0.0]: https://github.com/pulstack13/HomeMonitor-Agent-orchestrated-Monitor-Windows-Linux-Android-Devices-vitals-from-One-Dashboard/releases/tag/v1.0.0

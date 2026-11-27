@@ -84,9 +84,8 @@ Do not bump the schema version for documentation or installer-only changes.
 
 8. **License and metadata**
 
-   Confirm `LICENSE`, `README.md` links, repository description and topics. Replace
-   `YOUR-USERNAME` placeholders in docs with the real repository URL only at publish time
-   if you want absolute links; relative links are preferred.
+   Confirm `LICENSE`, `README.md` links, repository description and topics. Ensure any
+   repository-specific links point to the actual GitHub project before publishing.
 
 ## Build the release archives
 
