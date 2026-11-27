@@ -1,0 +1,31 @@
+[Unit]
+Description=HomeMonitor central server and dashboard
+Documentation=https://github.com/OWNER/REPOSITORY
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=homemonitor
+Group=homemonitor
+WorkingDirectory=/opt/homemonitor
+Environment=PYTHONUNBUFFERED=1
+Environment=HOMEMONITOR_DATA_DIR=/var/lib/homemonitor
+EnvironmentFile=-/etc/homemonitor/server.env
+ExecStart=/usr/bin/python3 -m server --data-dir /var/lib/homemonitor
+Restart=on-failure
+RestartSec=5
+StateDirectory=homemonitor
+StateDirectoryMode=0700
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target
